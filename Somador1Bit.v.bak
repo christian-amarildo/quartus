@@ -1,0 +1,10 @@
+module display7seg (A, B, Cin, S, Cout);
+input A, B, Cin;
+output s, Cout;
+
+assign S = ((A^B) ^ Cin);
+
+assing Cout = ((A&B) | ((A^B)&Cin));
+
+endmodule
+
